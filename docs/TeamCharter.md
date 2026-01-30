@@ -69,11 +69,11 @@
 We, the undersigned, commit to follow this Team Charter and work collaboratively to achieve the team’s goals.
 
 ### Signatures / Agreement 
-| Team Member | Signature | Date |
-|---|---|---|
-| Lindsey Powell | LP | 01/26/2026 |
-| Matt Menzer | MM | 01/26/2026 |
-| Abel Etienne | AE | 01/26/2026 |
-| Mason Abdo | MA | 01/26/2026 |
-| Aidan Kelly | AK | 01/26/ |
+| Signature | Date |
+|---|---|
+| LP | 01/26/2026 |
+| MM | 01/26/2026 |
+| AE | 01/26/2026 |
+| MA | 01/26/2026 |
+| AK | 01/26/ |
 
