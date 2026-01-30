@@ -75,5 +75,5 @@ We, the undersigned, commit to follow this Team Charter and work collaboratively
 | MM | 01/26/2026 |
 | AE | 01/26/2026 |
 | MA | 01/26/2026 |
-| AK | 01/26/ |
+| AK | 01/26/2026 |
 
