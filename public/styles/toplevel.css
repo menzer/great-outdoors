@@ -1,22 +1,74 @@
 
+:root {
+  --background-color: #e0d6c4; 
+  --foreground-color: #332222;
+  --radius: 6px;
+  --font-header: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+  --font-body: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --font-info: 'National Park' sans-serif;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: linen;
+  font-family: var(--font-body);
+  font-size: 18px;
+  background-color: darkslategray;
+  color: var(--foreground-color);
+  padding-top: 8px;
 }
 
-h1 {
-  color: navy;
+.app {
+  max-width: 8.5in;
+  width: 100%;
+  min-height: 11in;
+  margin: auto;
+  padding: 1in;
+  margin-top: 0.25px;
+  border-radius: var(--radius);
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-img{
-  width:300px;
-  height:200px;
-  border:10px solid green;
-  color:white;
-  border-radius:20px;
+.app.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-figcaption{
-  width: 315px;
-  text-align: left;
-  margin-left: 50px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header);
+}
+
+img.herologo {
+  margin-top: 1in;
+  height:2in;
+  width: auto;
+}
+
+
+.btnstack {
+  display: flex;
+  flex-direction: column;
+  width: 3in;
+}
+
+.btn {
+  padding: 4px 8px;
+  margin-bottom: 6px;
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border-radius: var(--radius);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-body);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btnstack.mainpage .btn {
+  width: 100%;
 }
