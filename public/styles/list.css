@@ -32,6 +32,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.list {
+    display: flex;
+    flex-direction: column;
+}
 
 h1,
 h2,
@@ -48,10 +52,10 @@ h1 {
 }
 
 h2.title {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 600;
-    margin-top: -8px;
-    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h2.info-title {
@@ -95,6 +99,10 @@ div.stats {
     align-items: center;
 }
 
+div.stats.icons {
+    margin-top: 6px;
+}
+
 div.stats span:not(:first-child) {
     margin-left: 2px;
 }
@@ -105,15 +113,19 @@ a.trail {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-top: 2px dashed rgba(12, 12, 12, 0.5);
     padding: 16px 2px;
 }
 
+a.trail:first-child {
+    border-top: none;
+}
+
 .trail .trailicon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 6px;
     margin-right: 12px;
     background-color: gray;
