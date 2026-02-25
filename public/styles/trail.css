@@ -1,0 +1,70 @@
+body {
+    font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    width: 6.5in;
+    margin: auto;
+    background-color: #e0d6c4;
+    color: #322;
+    padding-top: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif
+}
+
+h1.title {
+    font-size: 56px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+h2.info-title {
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+h1 img.skill {
+    max-height: 0.7em;
+}
+
+img.hero {
+    max-width: 100%;
+    max-height: 75vh;
+    border: 2px solid#322;
+    border-radius: 8px;
+}
+
+img.info {
+    margin-right: 4px;
+    background-color: #322;
+    border-radius: 4px;
+    width: 22px;
+    height: 22px;
+}
+
+img.info.skill {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+p.body {
+    margin-top: 30px;
+}
+
+div.stats {
+    font-family: 'National Park';
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+div.stats span:not(:first-child) {
+    margin-left: 2px;
+}
