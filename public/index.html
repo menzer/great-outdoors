@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Welcome to the Great Outdoors!</title>
-<link rel="stylesheet" type="text/css" href="styles/toplevel.css">
-<script src="scripts/myscripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to the Great Outdoors!</title>
+    <link rel="stylesheet" type="text/css" href="styles/toplevel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<h1>Welcome to the Great Outdoors!</h1>
+    <div class="app mainpage">
+        <img class="herologo" src="/images/logo.png" alt="Great Outdoors" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
+        <h1>Your Adventure Awaits!</h1>
 
-
-<img src = "images/outdoors.jpg" alt="Great Outdoors" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<figcaption>Your Adventure Awaits!</figcaption>
-
-<p id="alttext" style="font-size:50px"> <p>
-
-<ul>
-<li><a href="mountain.html">Climb the Mountain</a></li>
-<li><a href="forest.html">Wander the Forest</a></li>
-<li><a href="falls.html">See the Falls</a></li>
-<li><a href="ferry.html">Ride the Ferry</a></li>
-<li><a href="lake.html">Walk Around the Lake</a></li>
-<li><a href="park.html">Read in the Park</a></li>
-</ul>
+        <div class="btnstack mainpage">
+            <a class="btn" href="getting_started.html">Getting Started</a>
+            <a class="btn" href="equipment.html">Useful Equipment</a>
+            <a class="btn" href="list.html">Trail List</a>
+        </div>
+    </div>
+    
 
 </body>
+
 </html>
