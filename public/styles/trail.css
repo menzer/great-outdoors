@@ -1,11 +1,35 @@
-body {
-    font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #e0d6c4;
+    --foreground-color: #332222;
+    --radius: 6px;
+    --font-header: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+    --font-body: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-info: 'National Park' sans-serif;
     font-size: 18px;
-    width: 6.5in;
-    margin: auto;
-    background-color: #e0d6c4;
-    color: #322;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 18px;
+    background-color: darkslategray;
+    color: var(--foreground-color);
     padding-top: 8px;
+}
+
+.app {
+    max-width: 8.5in;
+    width: 100%;
+    min-height: 11in;
+    margin: auto;
+    padding: 1in;
+    margin-top: 0.25px;
+    border-radius: var(--radius);
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 h1,
