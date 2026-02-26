@@ -1,26 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #e0d6c4;
+    --foreground-color: #332222;
+    --radius: 6px;
+    --font-header: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif;
+    --font-body: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-info: 'National Park' sans-serif;
+    font-size: 18px;
+}
 
 body {
-  background-color: lightcyan;
+    font-family: var(--font-body);
+    font-size: 18px;
+    background-color: darkslategray;
+    color: var(--foreground-color);
+    padding-top: 8px;
 }
 
-h1 {
-  color: darkblue;
+.app {
+    max-width: 8.5in;
+    width: 100%;
+    min-height: 11in;
+    margin: auto;
+    padding: 1in;
+    margin-top: 0.25px;
+    border-radius: var(--radius);
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-img{
-  width:300px;
-  height:200px;
-  border:10px solid green;
-  color:white;
-  border-radius:20px;
-  vertical-align: top;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', Georgia, 'Times New Roman', Times, serif
 }
 
-figcaption{
-  width: 315px;
-  text-align: left;
-  margin-left: 25px;
-  color:black;
-  font-style: italic;
-  font-size: 30px;
+h1:first-child {
+  margin-top: 0;
+}
+
+h1.title {
+  font-size: 56px;
+  font-weight: 600;
+  /* margin-top: 32px; */
+  margin-bottom: 2px;
+}
+
+h2.info-title {
+  margin-top: 32px;
+  margin-bottom: 2px;
+}
+
+h1 img.skill {
+  max-height: 0.7em;
+}
+
+img.hero {
+  max-width: 100%;
+  max-height: 75vh;
+  border: 2px solid#322;
+  border-radius: 8px;
+}
+
+img.info {
+  margin-right: 4px;
+  background-color: #322;
+  border-radius: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+img.info.skill {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+p.body {
+  margin-top: 30px;
+}
+
+div.stats {
+  font-family: 'National Park';
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+div.stats span:not(:first-child) {
+  margin-left: 2px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.3ex;
+}
+
+.btn {
+  padding: 4px 8px;
+  margin-bottom: 6px;
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border-radius: var(--radius);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-body);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@media (max-width: 500px) {
+  .app { 
+    padding: 6vmin;
+  }
 }
