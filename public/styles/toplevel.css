@@ -43,9 +43,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-header);
 }
 
+.title {
+  text-align: center;
+}
+
 img.herologo {
   margin-top: 1in;
-  height:2in;
+  max-width: min(90vw, 4in);
   width: auto;
 }
 

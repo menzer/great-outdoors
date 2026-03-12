@@ -92,3 +92,9 @@ div.stats {
 div.stats span:not(:first-child) {
     margin-left: 2px;
 }
+
+@media (max-width: 500px) {
+  .app { 
+    padding: 6vmin;
+  }
+}
