@@ -134,3 +134,41 @@ a .navlogo {
         display: none;
     }
 }
+
+
+/* For printability */
+
+@media print {
+    :root {
+        --background-color: white;
+        --foreground-color: black;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .app {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    img.hero {
+        max-height: 2.5in;
+    }
+
+    img.info {
+        margin-right: 4px;
+        background-color: var(--foreground-color);
+        border-radius: 4px;
+        width: 22px;
+        height: 22px;
+        -webkit-print-color-adjust: exact !important; /* For Chrome, Safari, Edge (WebKit/Blink) */
+        print-color-adjust: exact !important;  
+    }
+}

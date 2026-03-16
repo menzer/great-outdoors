@@ -137,44 +137,61 @@ a.trail:first-child {
 }
 
 @media (max-width: 500px) {
-  .app { 
-    padding: 6vmin;
-  }
+    .app {
+        padding: 6vmin;
+    }
 }
 
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: auto;
-  display: flex;
-  background-color: var(--background-color);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .nav a {
-  text-decoration: none;
-  padding: 8px 10px;
-  color: var(--foreground-color);
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.25s;
+    text-decoration: none;
+    padding: 8px 10px;
+    color: var(--foreground-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s;
 }
 
 .nav a:hover {
-  background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 a .navlogo {
-  height: 36px;
+    height: 36px;
 }
 
 @media (max-width: 500px) {
-  .nav a.mobile-hide { 
-    display: none;
-  }
+    .nav a.mobile-hide {
+        display: none;
+    }
+}
+
+@media print {
+    :root {
+        --background-color: white;
+        --foreground-color: black;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .app {
+        margin: 0;
+        padding: 0.5in;
+        box-shadow: none;
+    }
 }
