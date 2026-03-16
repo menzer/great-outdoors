@@ -17,7 +17,6 @@ body {
     font-size: 18px;
     background-color: darkslategray;
     color: var(--foreground-color);
-    padding-top: 8px;
 }
 
 .app {
@@ -26,7 +25,7 @@ body {
     min-height: 11in;
     margin: auto;
     padding: 1in;
-    margin-top: 0.25px;
+    margin-top: 64px;
     border-radius: var(--radius);
     background-color: var(--background-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -94,7 +93,44 @@ div.stats span:not(:first-child) {
 }
 
 @media (max-width: 500px) {
-  .app { 
-    padding: 6vmin;
-  }
+    .app {
+        padding: 6vmin;
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 8px 10px;
+    color: var(--foreground-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s;
+}
+
+.nav a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+a .navlogo {
+    height: 36px;
+}
+
+@media (max-width: 500px) {
+    .nav a.mobile-hide {
+        display: none;
+    }
 }
